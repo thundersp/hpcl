@@ -1,0 +1,10 @@
+Threads,Time,Program
+1,0.053661,Fibonacci
+2,0.259690,Fibonacci
+4,0.351797,Fibonacci
+6,0.430297,Fibonacci
+8,0.590012,Fibonacci
+10,0.633775,Fibonacci
+12,0.769261,Fibonacci
+14,1.002225,Fibonacci
+16,1.092641,Fibonacci
