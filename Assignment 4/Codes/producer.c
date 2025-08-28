@@ -9,7 +9,6 @@ int buffer[BUFFER_SIZE];
 int in = 0, out = 0, count = 0;
 
 void print_buffer() {
-    // Commented out to avoid huge clutter when many threads
     /*
     printf("Buffer: [");
     for (int i = 0; i < BUFFER_SIZE; i++) {

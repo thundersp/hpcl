@@ -27,7 +27,6 @@ int main() {
     int max_threads = omp_get_max_threads();
     long long result = 0;
 
-    // Open results.csv in append mode (file already has header from producer-consumer run)
     FILE *fp = fopen("results.csv", "a");
     if (!fp) {
         perror("File open failed");
