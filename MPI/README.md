@@ -221,7 +221,10 @@ Also, record the execution time using `MPI_Wtime()` and analyze performance when
 
 - Each process computes how many rows it should handle using:rows_per_process=sizeN
     
-    rows_per_process=Nsize\text{rows\_per\_process} = \frac{N}{\text{size}}
+    \[
+\text{rows\_per\_process} = \frac{N}{\text{size}}
+\]
+
     
 - Calculate the start and end row indices for each process.
 
@@ -234,7 +237,13 @@ Also, record the execution time using `MPI_Wtime()` and analyze performance when
 
 - Each process multiplies its assigned rows of the matrix with the full vector:yi=j=0∑N−1Aij×xj
     
-    yi=∑j=0N−1Aij×xjy_i = \sum_{j=0}^{N-1} A_{ij} \times x_j
+
+\[
+y_i = \sum_{j=0}^{N-1} A_{ij} \times x_j
+\]
+
+
+
     
 - Store results in a local result array.
 
@@ -300,9 +309,12 @@ Perform multiplication of two square matrices `A` and `B` of size `N × N` using
 
 - Each process calculates:
 
-rows_per_process=Nsize\text{rows\_per\_process} = \frac{N}{\text{size}}
 
-rows_per_process=sizeN
+
+\[
+\text{rows\_per\_process} = \frac{\text{size}}{N}
+\]
+
 
 - Determine the starting and ending row indices for each process.
 
@@ -316,9 +328,10 @@ rows_per_process=sizeN
 
 - Each process computes its assigned rows of the result matrix `C`:
 
-C[i][j]=∑k=0N−1A[i][k]⋅B[k][j]C[i][j] = \sum_{k=0}^{N-1} A[i][k] \cdot B[k][j]
+\[
+C[i][j] = \sum_{k=0}^{N-1} A[i][k] \cdot B[k][j]
+\]
 
-C[i][j]=k=0∑N−1A[i][k]⋅B[k][j]
 
 - Store results in `local_C`.
 
