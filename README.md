@@ -1,6 +1,7 @@
 # High performance computing LAB
 
-# OpenMP
+# OpenMP 
+Chat gpt link - https://chatgpt.com/share/690da6b2-5ccc-8010-8f05-440ca7bb4ef1
 
 ## Assignment 1
 sudo apt install build-essentials -- Installation of openMP
