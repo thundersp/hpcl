@@ -1,0 +1,3 @@
+Problem,Sequential_Avg,Parallel_Avg,Speedup,Wasted_Computation
+N-Queens,170.55,24.14,7.06,0
+Branch_Evaluation,130.01,228.90,0.57,50
