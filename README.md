@@ -19,7 +19,7 @@ Fibonacci sequential and parallel, Producer and Consumer Problem
 Matrix x Matrix multiplication, Matrix x Scalar multiplication, Matrix x Vector multiplication, Prefix-sum
 
 # MPI
-
+https://chatgpt.com/share/690daba1-e5b8-8010-8549-4b9cce6f5238
 ## Assignment 6
 MPI Installation -- MPI buffer send and receive -- Sum of array
 
